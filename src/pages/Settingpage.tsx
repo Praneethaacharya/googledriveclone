@@ -1,9 +1,10 @@
+"use client"
 import { Button, Checkbox, Link, Listbox, ListboxItem, Progress, Radio, RadioGroup, Spacer } from '@nextui-org/react'
 import { color, useScroll } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
 
 
-const setting = () => {
+const Settingpage = () => {
 
   const [selectedOption, setSelectedOption] = useState<string>('Home');
   useEffect(() => {
@@ -41,11 +42,7 @@ const setting = () => {
       localStorage.setItem('selecteddensity', value);
     }
   };
-
-
   
-
-    
   return (
     <div className=' bg-white text-black'>
       <div className='flex flex-col'>
@@ -121,4 +118,4 @@ const setting = () => {
   )
 }
 
-export default setting
+export default Settingpage

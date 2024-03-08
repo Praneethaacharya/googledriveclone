@@ -1,7 +1,7 @@
 import { Chip, Image, Input, Progress, Textarea } from '@nextui-org/react'
 import React from 'react'
 
-const sidebar = () => {
+const Sidebarpage = () => {
   return (
     <div className='h-full bg-white'>
         <div className='w-fit h-fit ml-24'>
@@ -64,4 +64,4 @@ const sidebar = () => {
   )
 }
 
-export default sidebar
+export default Sidebarpage

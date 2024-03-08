@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
@@ -6,7 +8,7 @@ import { Input } from "@nextui-org/react";
 import { SearchIcon } from "../icons/searchicon";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 
-const rightside = () => {
+const Rightsidebar = () => {
     
   const [icon, seticon] = useState(true);
   const [color, setcolor] = useState(true);
@@ -58,4 +60,4 @@ const rightside = () => {
   )
 }
 
-export default rightside
+export default Rightsidebar

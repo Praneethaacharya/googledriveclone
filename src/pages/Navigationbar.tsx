@@ -1,10 +1,12 @@
 import { Input, Navbar, Spacer } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
-import { Link } from 'react-router-dom'
-import setting from './setting'
+import Link from 'next/link'
 
-const navbar = () => {
+// import { Link } from 'react-router-dom'
+import Settingpage from './Settingpage'
+
+const Navigationbar = () => {
   return (
     <div className='ml-20'>
     <Navbar>
@@ -31,9 +33,9 @@ const navbar = () => {
         <Image width={20} height={20} src="/offline.png" alt="NextUI Album Cover" className="gap-3 m-1 " />
         <Image width={20} height={20} src="/support.png" alt="NextUI Album Cover" className="gap-3 ml-1 -mr-2" />
         {/* <div className='w-30 h-30 mt-4'> */}
-        <a href='/setting' >
+        <Link href='/Settingpage' >
         <Image width={40} height={20} src="/settings.png" alt="NextUI Album Cover" className="w-40 h-5 m-3 gap-3 "/>
-        </a>
+        </Link>
         {/* </div> */}
         
         <Image width={20} height={20} src="/googleApps.png" alt="NextUI Album Cover" className="gap-3 ml-4" />
@@ -43,4 +45,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navigationbar
